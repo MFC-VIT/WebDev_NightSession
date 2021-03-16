@@ -4,84 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
-    
-    <div class="landing">
-        <img src="./imgs/pic.jpg" alt="">
-        <div class="navbar">
-            <a href="#" class="logo">Website</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="">Domains</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Login</a></li>
-            </ul>
+      <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">WEBSITE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Domains</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container d-flex align-items-center justify-content-center flex-column text-center content">  
+            <h1 class="display-2">Welcome to our Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa aliquam numquam exercitationem quam autem vero repellat, aspernatur qui distinctio! Recusandae quisquam quo rerum facere expedita mollitia nihil dignissimos autem!</p>  
         </div>
+      </div>
 
-        <div class="content">
-            <h2>Welcome to our website</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a magnam excepturi, numquam illum rerum accusamus vero impedit eligendi explicabo consequuntur fugit ut inventore totam nemo esse quos ipsa dolor!</p>
-        </div>
-    </div>
-
-    <section class="aboutus" id="about">
-        <div class="content-about">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore numquam ab. Ducimus consequuntur iure iusto quibusdam, at, sunt, sequi qui odit perferendis et quod error laboriosam vel fugiat odio.</p>
-            <br><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore numquam ab. Ducimus consequuntur iure iusto quibusdam, at, sunt, sequi qui odit perferendis et quod error laboriosam vel fugiat odio.</p>
-            <br><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore numquam ab. Ducimus consequuntur iure iusto quibusdam, at, sunt, sequi qui odit perferendis et quod error laboriosam vel fugiat odio.</p>
-            <br><br>
-        </div>
-        <img src="./imgs/aboutus.png" alt="">
-    </section>
-
-    <section class="domains">
-        <h2>Our Domains</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nam, aperiam dolorum expedita maiores exercitationem dignissimos, non amet animi provident officiis, minima harum explicabo odit odio corporis blanditiis pariatur?</p>
+      <div class="aboutus py-5 text-center">
         <div class="container">
-            <div class="card">
-                <h3>Design</h3>
-                <img src="./imgs/design.png" alt="">
-                <p><i>"Something about this domain"</i></p>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center p-5">
+              <h1 class="display-5 mb-5 text-uppercase">About us</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloremque itaque quasi enim accusamus quas, ut odio rem reprehenderit eaque saepe. Adipisci temporibus, doloribus similique architecto nostrum quod autem repudiandae?</p>
+              <br><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit pariatur omnis. Atque quia unde magnam ea ab animi reprehenderit, aliquid aliquam sequi quod laboriosam praesentium temporibus nihil id perspiciatis?</p>
             </div>
-            <div class="card">
-                <h3>Technical</h3>
-                <img src="./imgs/tech.png" alt="">
-                <p><i>"Something about this domain"</i></p>
+            <div class="col-md-6 col-sm-12">
+              <img src="../imgs/aboutus.png" alt="..." class="w-75">
             </div>
-            <div class="card">
-                <h3>Management</h3>
-                <img src="./imgs/manage.png" alt="">
-                <p><i>"Something about this domain"</i></p>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente facilis voluptas ea consequatur, inventore cumque eius dicta non architecto quod soluta, autem dolorem repellat tempore delectus fuga, sint iste? Commodi?</p>
-        <div class="contact-div">
-            <img src="./imgs/contact.png" alt="">
-            <form>
-                <input type="text" placeholder="Enter your name">
-                <input type="email" placeholder="Enter your email">
-                <input type="text" placeholder="Enter your phone">
-                <textarea placeholder="Enter your question"></textarea>
-                <button>Submit</button>
-            </form>
+      
+      <section class="domains py-5 text-center">
+        <div class="container">
+          <h1 class="display-5 my-5 text-uppercase">Our Domains</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloremque itaque quasi enim accusamus quas, ut odio rem reprehenderit eaque saepe. Adipisci temporibus, doloribus similique architecto nostrum quod autem repudiandae?</p>
+          <div class="row container mt-4 d-flex mx-auto justify-content-around">
+            <div class="dom mt-2 col-lg-3 col-sm-12">
+              <h4>Management</h4>
+              <img src="../imgs/manage.png" alt="">
+            </div>
+            <div class="dom mt-2 col-lg-3 col-sm-12">
+              <h4>Technical</h4>
+              <img src="../imgs/tech.png" alt="">
+            </div>
+            <div class="dom mt-2 col-sm-12 col-lg-3">
+              <h4>Design</h4>
+              <img src="../imgs/design.png" alt="">
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <div class="footer">
-        <h2>Made during WEEK 2</h2>
-    </div>
+      <section class="contact py-5 text-center">
+        <div class="container">
+          <h1 class="display-5 my-5 text-uppercase">Contact US</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloremque itaque quasi enim accusamus quas, ut odio rem reprehenderit eaque saepe. Adipisci temporibus, doloribus similique architecto nostrum quod autem repudiandae?</p>
+          <div class="container">
+            <div class="row justify-content-md-center mt-5">
+              <div class="col-sm-12 col-lg-6">
+                <img class="w-100" src="../imgs/contact.png" alt="">
+              </div>
+              <div class="col-sm-12 col-lg-6 d-flex justify-content-md-center align-items-center">
+                <form>
+                  <div class="row mb-2 mt-2">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Phone" aria-label="Last name">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+                  </div>
+                  <div class="input-group">
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Enter Question"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
